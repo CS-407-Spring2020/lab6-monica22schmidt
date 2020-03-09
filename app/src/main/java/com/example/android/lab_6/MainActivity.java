@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         new LatLng(mLastKnownLocation.getLatitude(),
                                 mLastKnownLocation.getLongitude()),
                                 mDestinationLatLng));
+                    mMap.addMarker(new MarkerOptions()
+                            .position(new LatLng(mLastKnownLocation.getLatitude(),
+                                    mLastKnownLocation.getLongitude()))
+                            .title("Destination"));
                 }
             });
         }
